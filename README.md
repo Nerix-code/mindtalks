@@ -165,5 +165,5 @@ def classifyProblem(message):
 ---
 
 <div align="center">
-  <p>© 2023 MindTalks. Все права защищены.</p>
+  <p>© 2025 MindTalks. Все права защищены.</p>
 </div> 
