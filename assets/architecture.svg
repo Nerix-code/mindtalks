@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="400" fill="#F5F5F5" rx="15" ry="15" />
+  
+  <!-- Mobile App Box -->
+  <rect x="100" y="150" width="150" height="200" fill="#FFFFFF" stroke="#0D4CD3" stroke-width="3" rx="10" ry="10" />
+  <text x="175" y="130" font-family="Arial, sans-serif" font-size="18" fill="#0D4CD3" text-anchor="middle" font-weight="bold">Android App</text>
+  <rect x="125" y="170" width="100" height="160" fill="#E3F2FD" rx="5" ry="5" />
+  <circle cx="175" cy="190" r="10" fill="#0D4CD3" />
+  <rect x="140" y="210" width="70" height="10" fill="#0D4CD3" rx="5" ry="5" />
+  <rect x="140" y="230" width="70" height="10" fill="#0D4CD3" rx="5" ry="5" />
+  <rect x="140" y="250" width="70" height="10" fill="#0D4CD3" rx="5" ry="5" />
+  <rect x="140" y="270" width="70" height="10" fill="#0D4CD3" rx="5" ry="5" />
+  <rect x="140" y="290" width="70" height="25" fill="#FF5722" rx="5" ry="5" />
+  
+  <!-- API Server Box -->
+  <rect x="350" y="150" width="150" height="200" fill="#FFFFFF" stroke="#2B7EDA" stroke-width="3" rx="10" ry="10" />
+  <text x="425" y="130" font-family="Arial, sans-serif" font-size="18" fill="#2B7EDA" text-anchor="middle" font-weight="bold">API Server</text>
+  <path d="M375,190 L475,190 M375,210 L475,210 M375,230 L475,230 M375,250 L445,250" stroke="#2B7EDA" stroke-width="2" stroke-dasharray="5,5" />
+  <rect x="375" y="270" width="100" height="60" fill="#E1F5FE" rx="5" ry="5" />
+  <text x="425" y="305" font-family="Arial, sans-serif" font-size="14" fill="#2B7EDA" text-anchor="middle">Flask REST API</text>
+  
+  <!-- AI Model Box -->
+  <rect x="600" y="150" width="150" height="200" fill="#FFFFFF" stroke="#0065B1" stroke-width="3" rx="10" ry="10" />
+  <text x="675" y="130" font-family="Arial, sans-serif" font-size="18" fill="#0065B1" text-anchor="middle" font-weight="bold">AI Model</text>
+  <path d="M625,200 C645,180 655,220 675,200 C695,180 705,220 725,200" stroke="#0065B1" stroke-width="2" fill="none" />
+  <path d="M625,230 C645,210 655,250 675,230 C695,210 705,250 725,230" stroke="#0065B1" stroke-width="2" fill="none" />
+  <path d="M625,260 C645,240 655,280 675,260 C695,240 705,280 725,260" stroke="#0065B1" stroke-width="2" fill="none" />
+  <rect x="625" y="290" width="100" height="40" fill="#E0F7FA" rx="5" ry="5" />
+  <text x="675" y="315" font-family="Arial, sans-serif" font-size="14" fill="#0065B1" text-anchor="middle">DistilGPT2+LoRA</text>
+  
+  <!-- Connection Lines -->
+  <path d="M250,250 L350,250" stroke="#757575" stroke-width="3" stroke-dasharray="10,5" />
+  <path d="M500,250 L600,250" stroke="#757575" stroke-width="3" stroke-dasharray="10,5" />
+  
+  <!-- Connection Arrows -->
+  <polygon points="345,245 345,255 355,250" fill="#757575" />
+  <polygon points="595,245 595,255 605,250" fill="#757575" />
+  
+  <!-- Data Flow Text -->
+  <text x="300" y="235" font-family="Arial, sans-serif" font-size="12" fill="#555555" text-anchor="middle">HTTP Request</text>
+  <text x="550" y="235" font-family="Arial, sans-serif" font-size="12" fill="#555555" text-anchor="middle">API Call</text>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" fill="#212121" text-anchor="middle" font-weight="bold">MindTalks System Architecture</text>
+  <line x1="250" y1="60" x2="550" y2="60" stroke="#0D4CD3" stroke-width="3" />
+</svg> 

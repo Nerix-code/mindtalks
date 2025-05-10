@@ -1,0 +1,252 @@
+/* MindTalks Presentation Custom CSS */
+
+/* Main Styles */
+:root {
+  --primary-color: #0D4CD3;
+  --primary-dark: #0065B1;
+  --primary-light: #2B7EDA;
+  --accent-color: #FF5722;
+  --text-color: #212121;
+  --text-secondary: #757575;
+  --background: #F5F5F5;
+  --surface: #FFFFFF;
+}
+
+body {
+  background-color: var(--background);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Headings */
+.reveal h1,
+.reveal h2 {
+  color: var(--primary-color);
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 0.5em;
+}
+
+.reveal h3,
+.reveal h4 {
+  color: var(--primary-light);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Text */
+.reveal p {
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+/* Lists */
+.reveal ul,
+.reveal ol {
+  display: block;
+  text-align: left;
+  margin: 0 0 0 2em;
+}
+
+.reveal li {
+  margin: 0.5em 0;
+}
+
+/* Images */
+.reveal img {
+  border: none !important;
+  box-shadow: none !important;
+  max-height: 80vh;
+}
+
+/* Slide Background */
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .slide-background {
+  background-color: var(--surface);
+}
+
+/* Links */
+.reveal a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.reveal a:hover {
+  color: var(--primary-light);
+  text-decoration: underline;
+}
+
+/* Progress Bar */
+.reveal .progress {
+  color: var(--primary-color);
+  height: 5px;
+}
+
+/* Code */
+.reveal pre {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reveal code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+/* Tables */
+.reveal table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+.reveal table th {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  font-weight: normal;
+}
+
+.reveal table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.reveal table tr:nth-child(even) {
+  background-color: rgba(13, 76, 211, 0.05);
+}
+
+/* Blockquotes */
+.reveal blockquote {
+  border-left: 5px solid var(--primary-color);
+  padding-left: 10px;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 1em 0;
+}
+
+/* Dividers */
+hr {
+  border: none;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
+  margin: 1em 0;
+}
+
+/* Highlight */
+.highlight {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Text Center */
+.text-center {
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: 0.7em;
+  color: var(--text-secondary);
+}
+
+/* Color Boxes */
+.color-box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.color-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.color-dark {
+  background-color: var(--primary-dark);
+  color: white;
+}
+
+.color-light {
+  background-color: var(--primary-light);
+  color: white;
+}
+
+.color-accent {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+/* Custom animations for reveal.js */
+.reveal .slides section .fragment.highlight-blue {
+  opacity: 1;
+  visibility: inherit;
+}
+
+.reveal .slides section .fragment.highlight-blue.visible {
+  color: var(--primary-color);
+}
+
+/* Material Card Style */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Two Column Layout */
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 45%;
+  padding: 0 10px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .column {
+    flex: 100%;
+    padding: 0;
+  }
+}
+
+/* Custom header with logo */
+.header {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 500;
+  font-size: 0.8em;
+}
+
+.header img {
+  height: 30px;
+  vertical-align: middle;
+}
+
+/* Controls styling */
+.reveal .controls {
+  color: var(--primary-color);
+} 
